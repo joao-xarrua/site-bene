@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 200vh;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    transition: 0.6s;
+    z-index: 10000;
+}
+
+/* Propriedades com change header */
+header.change-header {
+    padding: 10px 100px;
+    background: #000;
+}
+
+header.change-header .logo-wrap a h1{
+    color: #fff;
+}
+
+header.change-header .logo-wrap a h2{
+    font-size: 12px;
+    color: #fff;
+}
+
+header.change-header ul li a {
+    color: #fff;
+}
+
+
+/* fim das propriedade com change header */
+
+header .logo-wrap {
+    text-align: center;
+}
+
+header .logo-wrap a {
+    text-decoration: none;
+}
+
+header .logo-wrap h1 {
+    position: relative;
+    font-weight: 700;
+    color: #000;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 48px;
+    transition: 0.6s;
+    font-family: 'Poppins', sans-serif;
+}
+
+header .logo-wrap h2 {
+    position: relative;
+    font-weight: 200;
+    color: #000;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    font-family: 'Poppins', sans-serif;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #000;
+    transition: 0.6s;
+    font-family: 'Poppins', sans-serif;
+}
+
+header .logo-wrap a h1:hover, header ul li a:hover {
+    color: #ccaa11;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/banner-bg.jpg);
+    background-size: cover;
+}
